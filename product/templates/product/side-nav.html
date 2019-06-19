@@ -1,0 +1,67 @@
+{% load static %}
+    <!-- Sidebar -->
+
+
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">Start Bootstrap </div>
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                    Products
+                  </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">View Products</a>
+                    <a class="list-group-item list-group-item-action bg-light" href="{% url 'add_product' %}" >Add Products</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Delete Products</a>
+                  </div>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseTwo">
+                   Sales
+                  </a>
+                </div>
+                <div id="collapseTwo" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Total Sales</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Inventory</a>
+                  </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseThree">
+                   Orders
+                  </a>
+                </div>
+                <div id="collapseThree" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Total Orders</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Pending Orders</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Delivered Orders</a>
+                  </div>
+                </div>
+            </div>
+           <div class="card">
+                <div class="card-header">
+                  <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                   Reports
+                  </a>
+                </div>
+                <div id="collapseFour" class="collapse show" data-parent="#accordion">
+                  <div class="card-body">
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Report 1</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Report 2</a>
+                    <a href="#" class="list-group-item list-group-item-action bg-light">Report 3</a>
+                  </div>
+                </div>
+            </div>
+            <a href="#" class="list-group-item list-group-item-action bg-light">Profile</a>
+          </div>
+        </div>
+    </div>
